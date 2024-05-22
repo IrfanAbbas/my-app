@@ -1,14 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navbar from "./component/Navbar";
+import React from 'react';
+import './App.css';
+import WeatherApp from "./component/WeatherApp"
 
 function App() {
-  return <>
-  
-  <Navbar 
-        title="Welcome "/>
-  
-  </>;
+  return (
+   <div>
+    <h1 className='firsth'>Welcome to App </h1>
+    <WeatherApp/>
+   </div>
+  );
 }
 
 export default App;
