@@ -1,14 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './component/Home';
+import Chat from './component/Chat';
 import './App.css';
-import WeatherApp from "./component/WeatherApp"
+
 
 function App() {
   return (
-   <div>
-    <h1 className='firsth'>Welcome to App </h1>
-    <WeatherApp/>
-   </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Chat" element={<Chat />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
